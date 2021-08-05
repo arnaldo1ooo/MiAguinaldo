@@ -9,11 +9,11 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.fragment.NavHostFragment;
 
-import com.databit.miaguinaldo.databinding.FragmentSecondBinding;
+import com.databit.miaguinaldo.databinding.FragmentSueldoMesesBinding;
 
-public class SecondFragment extends Fragment {
+public class SueldoMesesFragment extends Fragment {
 
-    private FragmentSecondBinding binding;
+    private FragmentSueldoMesesBinding binding;
 
     @Override
     public View onCreateView(
@@ -21,7 +21,7 @@ public class SecondFragment extends Fragment {
             Bundle savedInstanceState
     ) {
 
-        binding = FragmentSecondBinding.inflate(inflater, container, false);
+        binding = FragmentSueldoMesesBinding.inflate(inflater, container, false);
         return binding.getRoot();
 
     }
@@ -29,10 +29,10 @@ public class SecondFragment extends Fragment {
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        binding.buttonSecond.setOnClickListener(new View.OnClickListener() {
+        binding.button9.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                NavHostFragment.findNavController(SecondFragment.this)
+                NavHostFragment.findNavController(SueldoMesesFragment.this)
                         .navigate(R.id.action_SecondFragment_to_FirstFragment);
             }
         });

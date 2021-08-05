@@ -24,4 +24,6 @@
     <string name="Noviembre">Noviembre</string>
     <string name="Diciembre">Diciembre</string>
     <string name="Cero">0</string>
+    <string name="TituloSueldos">Indicar sueldo percibido mensualmente</string>
+    <string name="SeleccionPaises">Seleccione su país</string>
 </resources>

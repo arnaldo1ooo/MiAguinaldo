@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MiAguinaldo">
         <activity
-            android:name=".MainActivity"
+            android:name=".PrincipalActivity"
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.MiAguinaldo.NoActionBar">

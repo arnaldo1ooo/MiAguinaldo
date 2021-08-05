@@ -9,11 +9,11 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.fragment.NavHostFragment;
 
-import com.databit.miaguinaldo.databinding.FragmentFirstBinding;
+import com.databit.miaguinaldo.databinding.FragmentSeleccionPaisesBinding;
 
-public class FirstFragment extends Fragment {
+public class SeleccionPaisesFragment extends Fragment {
 
-    private FragmentFirstBinding binding;
+    private FragmentSeleccionPaisesBinding binding;
 
     @Override
     public View onCreateView(
@@ -21,7 +21,7 @@ public class FirstFragment extends Fragment {
             Bundle savedInstanceState
     ) {
 
-        binding = FragmentFirstBinding.inflate(inflater, container, false);
+        binding = FragmentSeleccionPaisesBinding.inflate(inflater, container, false);
         return binding.getRoot();
 
     }
@@ -32,7 +32,7 @@ public class FirstFragment extends Fragment {
         binding.buttonFirst.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                NavHostFragment.findNavController(FirstFragment.this)
+                NavHostFragment.findNavController(SeleccionPaisesFragment.this)
                         .navigate(R.id.action_FirstFragment_to_SecondFragment);
             }
         });
